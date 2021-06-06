@@ -10,7 +10,7 @@ body{
 
 nav{
 
-    margin:2%;
+    margin:1%;
     display:flex;
     flex-direction:row;
     justify-content:center;
@@ -92,22 +92,25 @@ div.login{
     width:100%;
     display:flex;
     flex-direction:row;
+    justify-content:center;
     margin-top:5rem;
+    flex-wrap: wrap;
+    gap:7%;
 }
 
 
 /* LEFT */
 div.left{
-    width:50%;
+    display:flex;
+    flex-direction:column;
 }
-
 
 
 div.left button{
     background-color: #00e99f;
     border-radius: 10px;
     text-align: left;
-    width:50%;
+    width:30rem;
     padding:1.5rem;
     font-size:1.2rem;
     margin-bottom:10px;
@@ -118,8 +121,8 @@ div.left button{
 
 /* RIGHT */
 div.right{
-    width:50%;
-    
+    display:flex;
+    flex-direction:column;
 }
 
 div.right button, div.left input{
@@ -127,8 +130,33 @@ div.right button, div.left input{
     border: 2px solid black;
     border-radius: 10px;
     text-align: left;
-    width:50%;
+    width:30rem;
     padding:1.5rem;
     font-size:1.2rem;
     margin-bottom:10px;
+}
+
+/* Footer */
+
+footer a{
+    color: black;
+    font-size:1.2rem;
+}
+
+div.forgot{
+    text-align:center;
+    margin-top:3rem;
+    
+}
+
+div.last{
+    
+    display:flex;
+    justify-content:space-between;
+    margin: 0 5rem;
+    margin-top: 5rem;
+}
+div.last a{
+    
+    text-decoration: none;
 }
