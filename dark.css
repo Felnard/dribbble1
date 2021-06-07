@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +8,7 @@
 body{
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(32, 30, 30);
 }
 
 nav{
@@ -36,9 +38,9 @@ nav ul{
 sup{
     position:absolute;
     left:90%;
-    background-color:#e3f9e2;
+    background: linear-gradient(52deg, rgba(158,59,140,1) 0%, rgba(240,45,54,1) 66%, rgba(250,138,71,1) 100%);
     border-radius:10px;
-    color:#00e99f;
+    color: white;
     padding:3px 5px;
     font-size: 10px;
 }
@@ -46,38 +48,29 @@ nav li{
     list-style-type: none;
     font-weight: bold;
     padding:1.5rem;
-    
     font-size:1.2rem;
+    color:white;
     
 }
 
 
 div.signUp button{
     
-    background-color: #00e99f;
+    background: linear-gradient(52deg, rgba(158,59,140,1) 0%, rgba(240,45,54,1) 66%, rgba(250,138,71,1) 100%);
     border-radius: 10px;
     text-align: left;
     padding:.7rem 2rem .7rem 2rem;
     border: none;
     font-weight: bold;
+    color:white;
 }
-
-div.signUp button:hover{
-    
-    background-color: #0bc78b;
-    
-}
-
 
 div.brand li{
     font-size:1.5rem;
-
 }
 
 .middle li:hover{
-   
-    background-color: rgb(241, 241, 241);
-    
+    background-color: rgb(51, 48, 48);
 }
 
 
@@ -93,6 +86,7 @@ div.title{
 div.title h1{
     font-size:3rem;
     text-align: center;
+    color:white;
 }
 div.title p{
     font-size:2rem;
@@ -100,6 +94,7 @@ div.title p{
     text-align: center;
     padding:0 25% 0 25%;
     line-height: 1.5;
+    color:#a0a0a0;
 }
 
 /* login */
@@ -123,7 +118,7 @@ div.left{
 
 
 div.left button{
-    background-color: #00e99f;
+    background: linear-gradient(52deg, rgba(158,59,140,1) 0%, rgba(240,45,54,1) 66%, rgba(250,138,71,1) 100%);
     border-radius: 10px;
     text-align: left;
     width:30rem;
@@ -132,6 +127,7 @@ div.left button{
     margin-bottom:10px;
     border: none;
     font-weight: bold;
+    color: white;
 }
 button > a{
     margin-left: 43%;
@@ -148,8 +144,10 @@ div.right{
 }
 
 div.right button, div.left input{
-    background-color: white;
-    border: 2px solid black;
+    color: white;
+    background-color: rgb(32, 30, 30);
+    border: 2px solid white;
+    border-color:linear-gradient(to right, rgba(158,59,140,1), rgba(250,138,71,1) 100%);
     border-radius: 10px;
     text-align: left;
     width:30rem;
@@ -158,9 +156,13 @@ div.right button, div.left input{
     margin-bottom:10px;
 }
 
+div.left input{
+    border: none;
+    background-color: rgb(59, 59, 59);
+}
+
 div.right button{
     padding-bottom: 1rem;
-
 }
 
 button > img{
@@ -168,10 +170,14 @@ button > img{
     margin-right: 15px;
 }
 
+button > img{
+    background-color:white;
+}
+
 /* Footer */
 
 footer a{
-    color: black;
+    color: white;
     font-size:1.2rem;
 }
 
@@ -189,6 +195,6 @@ div.last{
     margin-top: 5rem;
 }
 div.last a{
-    
+    color:#a0a0a0;
     text-decoration: none;
 }
