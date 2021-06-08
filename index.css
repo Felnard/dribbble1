@@ -4,10 +4,31 @@
     padding: 0;
 }
 
+
+:root{
+
+    --btnColor:linear-gradient(#00e99f,#00e99f);
+    --bgColor: white;
+    --txtColor:black;
+    --grayColor:white;
+    --btnBorder:  2px solid black;
+    --pColor:black;
+
+    /* --color:rgba(158,59,140,1);
+    --color2: rgba(240,45,54,1); */
+
+
+}
+
+
 body{
     font-size: 16px;
     font-family: 'Montserrat', sans-serif;
-}
+   background-color: var(--bgColor);
+   color:var(--txtColor);
+   background-image:linear-gradient(var(--try));
+
+    }
 
 nav{
 
@@ -36,9 +57,9 @@ nav ul{
 sup{
     position:absolute;
     left:90%;
-    background-color:#e3f9e2;
+    background-image:var(--btnColor);
     border-radius:10px;
-    color:#00e99f;
+    color:var(--btnColor);
     padding:3px 5px;
     font-size: 10px;
 }
@@ -54,18 +75,12 @@ nav li{
 
 div.signUp button{
     
-    background-color: #00e99f;
+    background-image:var(--btnColor);
     border-radius: 10px;
     text-align: left;
     padding:.7rem 2rem .7rem 2rem;
     border: none;
     font-weight: bold;
-}
-
-div.signUp button:hover{
-    
-    background-color: #0bc78b;
-    
 }
 
 
@@ -100,6 +115,7 @@ div.title p{
     text-align: center;
     padding:0 25% 0 25%;
     line-height: 1.5;
+    color:var(--pColor);
 }
 
 /* login */
@@ -123,7 +139,9 @@ div.left{
 
 
 div.left button{
-    background-color: #00e99f;
+    
+    background-color: var(--bgColor);
+    background-image:var(--btnColor);;
     border-radius: 10px;
     text-align: left;
     width:30rem;
@@ -133,7 +151,7 @@ div.left button{
     border: none;
     font-weight: bold;
 }
-button > a{
+div.left a{
     margin-left: 43%;
 }
 
@@ -148,7 +166,7 @@ div.right{
 }
 
 div.right button, div.left input{
-    background-color: white;
+    background-color: var(--grayColor);
     border: 2px solid black;
     border-radius: 10px;
     text-align: left;
@@ -158,9 +176,14 @@ div.right button, div.left input{
     margin-bottom:10px;
 }
 
+div.left input{
+    color:var(--txtColor);
+    border: var(--btnBorder);
+}
+
+
 div.right button{
     padding-bottom: 1rem;
-
 }
 
 button > img{
@@ -191,4 +214,44 @@ div.last{
 div.last a{
     
     text-decoration: none;
+}
+
+
+/* MEDI QUERIES */
+
+@media screen and (max-width:1110px){
+   
+
+    div.login{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+/* 
+    div.right{
+        flex-direction:row;
+    }
+
+    div.right > button a{
+        display:none;
+    }
+    
+    div.right > button{
+        border: none;
+        width:0;
+        height:0;
+        margin: 0 50px;
+        background-color:rgb(51, 48, 48);
+        border-radius: 50%; 
+    }
+    div.right > button:hover{
+       
+    background-color: rgb(65, 63, 63);
+    }
+
+    button img{
+        position: relative;
+        bottom:16px;
+        right: 12px;
+    } */
 }
